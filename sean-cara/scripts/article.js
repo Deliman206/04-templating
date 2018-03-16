@@ -20,6 +20,9 @@ Article.prototype.toHtml = function() {
   let templateRender = Handlebars.compile(template);
   // 3. Do not forget to return the HTML from this method
   
+  //What to target to remove the class
+  $('article').removeClass('template');
+
   // REVIEW: If your template will use properties that aren't on the object yet, add them.
   // Since your template can't hold any JS logic, we need to execute the logic here.
   // The result is added to the object as a new property, which can then be referenced by key in the template.
