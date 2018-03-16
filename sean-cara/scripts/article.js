@@ -19,7 +19,7 @@ Article.prototype.toHtml = function() {
   // 2. Use Handlebars to "compile" the HTML
   let templateRender = Handlebars.compile(template);
   // 3. Do not forget to return the HTML from this method
-  
+
   //What to target to remove the class
   $('article').removeClass('template');
 
